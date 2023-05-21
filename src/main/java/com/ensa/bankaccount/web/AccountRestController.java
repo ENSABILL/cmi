@@ -32,7 +32,4 @@ public class AccountRestController {
         accountService.withdraw(balanceAccountRequest);
         return ResponseEntity.ok().build();
     }
-
-
-
 }
