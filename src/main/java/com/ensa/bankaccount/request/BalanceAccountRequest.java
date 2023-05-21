@@ -1,14 +1,15 @@
-package com.ensa.bankaccount.dto;
+package com.ensa.bankaccount.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Builder
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class BankDto {
-    String name;
+@Data
+@Builder
+public class BalanceAccountRequest {
+    private String username;
+    private Float amount;
 }

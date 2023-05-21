@@ -7,7 +7,7 @@ import com.ensa.bankaccount.entity.Customer;
 import org.springframework.beans.BeanUtils;
 
 public class CustomerMapper {
-    public static CustomerDto mapCustomertoCustomerDTO(Customer customer){
+    public static CustomerDto mapCustomerToCustomerDTO(Customer customer){
         CustomerDto customerDto = new CustomerDto();
         BeanUtils.copyProperties(customer,customerDto);
         return customerDto;
